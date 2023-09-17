@@ -83,7 +83,7 @@ color: var(--Tomato);
 display: none;
 }
 
-.form-item label .invalid-email:active{
+.form-item label .invalid-email.active{
   display: block;
 }
 
@@ -98,10 +98,13 @@ display: none;
 }
 
 .form-item input.active{
-  background: rgb(167, 78, 62);
+  background: var(--Tomato);
   border: 1px solid var(--Tomato);
 }
 
+/* .form-item label p.active{
+  display: inline-block;
+} */
 .form-item button{
   border: none;
   background: var(--Dark-Slate-Grey);
@@ -260,15 +263,15 @@ display: none;
   border-radius: 1rem;
 }
 
-/*#confirmed-message:active img,
-#confirmed-message:active h2,
-#confirmed-message:active p {
+/* .confirmed-message:active img,
+.confirmed-message:active h2,
+.confirmed-message:active p {
   margin-bottom: 5px;
 }
 
-#confirmed-message:active button {
+.confirmed-message:active button {
   margin-top: 2px;
-}*/
+} */
 .confirmed-message button{
   margin-top: auto;
 }

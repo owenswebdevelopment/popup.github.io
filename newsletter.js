@@ -3,7 +3,7 @@ const leftEl = document.getElementById('left');
 const rightEl = document.getElementById('right');
 
 const userEmailEl = document.getElementById('user-email');
-const invalidEmail= document.getElementById('invalid-email');
+const invalidEmailEl= document.getElementById('invalid-email');
 const emailInput = document.getElementById('email');
 const submitBtnEl = document.getElementById('submit-btn');
 
@@ -18,7 +18,6 @@ function formSuccess() {
 }
 
 function validateEmail(email) {
-  console.log(email);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   return emailRegex.test(email)
 }
@@ -33,7 +32,7 @@ submitBtnEl.addEventListener('click', (e) =>{
     userEmailEl.innerText = email
     emailInput.value = ''
 
-    invalidEmail.classList.remove('active')
+    invalidEmailEl.classList.remove('active')
     emailInput.classList.remove('active')
   } else{
     invalidEmailEl.classList.add('active')
