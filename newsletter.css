@@ -230,7 +230,7 @@ display: none;
 
 .container.success{
   display: initial;
-  padding: 0;
+  padding: initial;
 }
 
 .left{
@@ -260,7 +260,7 @@ display: none;
   border-radius: 1rem;
 }
 
-#confirmed-message:active img,
+/*#confirmed-message:active img,
 #confirmed-message:active h2,
 #confirmed-message:active p {
   margin-bottom: 5px;
@@ -268,7 +268,7 @@ display: none;
 
 #confirmed-message:active button {
   margin-top: 2px;
-}
+}*/
 .confirmed-message button{
   margin-top: auto;
 }
